@@ -1,6 +1,6 @@
 @import "./fonts.css";
 
-.App {
+.App-body {
   text-align: center;
   color: #ffffff;
 }
@@ -12,14 +12,17 @@
   pointer-events: none;
 }
 
-.App-header {
+.App-header__nav {
   background-color: #282c34;
   display: flex;
   flex-direction: row;
-  display: flex;
-
+  padding: 15px 15px 70px 15px;
   justify-content: space-between;
-  align-items: flex-start;
+}
+
+.App-menu__button {
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .App-logo_title__phone {
@@ -27,10 +30,56 @@
   font-weight: 800;
   font-family: "Montserrat";
   line-height: 14px;
-  height: 14px; 
-} 
+  height: 14px;
+}
 
 .App-logo_group {
   display: flex;
   flex-direction: column;
+}
+
+.App-menu {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.App-intro__container {
+  overflow: hidden;
+  background: var(--white-100, #fff);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 15px 70px 15px;
+  text-align: center;
+}
+
+.App-intro__text {
+  color: var(--Primary, #2d383f);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.App-intro__title {
+  margin: 0px;
+}
+
+.App-intro__button {
+  display: flex;
+  width: 180px;
+  height: 52px;
+  color: var(--white-100, #fff);
+  background: var(--additional-100, #0266c1);
+  justify-content: center;
+  align-items: center;
+  border-color: transparent;
+  align-self: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
 }
